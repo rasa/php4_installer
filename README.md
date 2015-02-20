@@ -1,6 +1,6 @@
 # php4_installer
 
-php4_installer lets you download and install PHP 4, the PECL extensions,
+php4_installer download and installs PHP 4, the PECL extensions,
 the PHP Manual (English) in Windows Help (CHM) Format, and the Zend Optimizer,
 which are available at http://www.php.net, and http://zend.com.
 
