@@ -45,6 +45,31 @@ Options:
            5: None
 ````
 
+## Verify a Release
+
+To verify a release, download the .zip, .sha256, and .asc files for the release 
+(replacing php4_installer-1.7-win32.zip with the release you are verifying):
+
+````
+$ wget https://github.com/rasa/php4_installer/releases/download/v1.7/php4_installer-1.7-win32.zip{,.sha256,.asc}
+````
+
+Next, check that sha256sum reports "OK":
+````
+$ sha256sum -c php4_installer-1.7-win32.zip.sha256
+php4_installer-1.7-win32.zip: OK
+````
+
+Lastly, check that GPG reports "Good signature":
+
+````
+$ gpg --keyserver hkps.pool.sks-keyservers.net --recv-key 0x105a5225b6ab4b22
+$ gpg --verify php4_installer-1.7-win32.zip.asc php4_installer-1.7-win32.zip
+gpg:                using RSA key 0xFF914F74B4BB6EF3
+gpg: Good signature from "Ross Smith II <ross@smithii.com>" [ultimate]
+...
+````
+
 ## Contributing
 
 To contribute to this project, please see [CONTRIBUTING.md](CONTRIBUTING.md).
