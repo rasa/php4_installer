@@ -1,3 +1,7 @@
+## 1.8 (12-Apr-2015)
+
+  * Update Inetc NSIS plugin to 1.0.4.4
+
 ## 1.7 (27-Mar-2015)
 
   * Executables signed with StartSSL code signing certificate
