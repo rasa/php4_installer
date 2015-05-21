@@ -1,3 +1,8 @@
+## 1.9 (20-May-2015)
+
+  * Remove UPX compression
+  * Update Makefile
+  
 ## 1.8 (12-Apr-2015)
 
   * Update Inetc NSIS plugin to 1.0.4.4
